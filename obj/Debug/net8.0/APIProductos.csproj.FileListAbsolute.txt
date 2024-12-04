@@ -166,3 +166,4 @@ C:\Users\david\source\repos\APIProductos\bin\Debug\net8.0\runtimes\win\lib\net6.
 C:\Users\david\source\repos\APIProductos\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\david\source\repos\APIProductos\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 c:\Users\david\source\repos\APIProductos\obj\Debug\net8.0\APIprodu.5F7B8DD4.Up2Date
+c:\Users\david\source\repos\APIProductos\obj\Debug\net8.0\APIproductos.sourcelink.json

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\david\\source\\repos\\APIProductos\\APIproductos.csproj": {}
+    "c:\\Users\\david\\source\\repos\\APIProductos\\APIproductos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\david\\source\\repos\\APIProductos\\APIproductos.csproj": {
+    "c:\\Users\\david\\source\\repos\\APIProductos\\APIproductos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\david\\source\\repos\\APIProductos\\APIproductos.csproj",
+        "projectUniqueName": "c:\\Users\\david\\source\\repos\\APIProductos\\APIproductos.csproj",
         "projectName": "APIproductos",
-        "projectPath": "C:\\Users\\david\\source\\repos\\APIProductos\\APIproductos.csproj",
+        "projectPath": "c:\\Users\\david\\source\\repos\\APIProductos\\APIproductos.csproj",
         "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\david\\source\\repos\\APIProductos\\obj\\",
+        "outputPath": "c:\\Users\\david\\source\\repos\\APIProductos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
