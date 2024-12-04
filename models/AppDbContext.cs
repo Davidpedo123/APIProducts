@@ -24,10 +24,7 @@ namespace APIproductos.Models
             modelBuilder.Entity<Devolucion>().HasKey(d => d.DevolucionID);
 
             // Relaciones
-            modelBuilder.Entity<Producto>()
-                .HasOne(p => p.Categoria)
-                .WithMany(c => c.Productos)
-                .HasForeignKey(p => p.CategoriaID);
+            
 
             modelBuilder.Entity<DetalleVenta>()
                 .HasOne(dv => dv.Venta)
