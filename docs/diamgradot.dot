@@ -1,0 +1,36 @@
+digraph G {
+    node [shape=record, fontname="Arial", fontsize=12];
+    
+    Producto [label="{ Producto | ProductoID : int | Nombre : string | Descripcion : string | Precio : decimal | CategoriaID : int | }"];
+    Categoria [label="{ Categoria | CategoriaID : int | Nombre : string | Descripcion : string | }"];
+    Venta [label="{ Venta | VentaID : int | Fecha : DateTime | Total : decimal | }"];
+    Devolucion [label="{ Devolucion | DevolucionID : int | VentaID : int | ProductoID : int | Cantidad : int | Motivo : string | FechaDevolucion : DateTime | }"];
+    DetalleVenta [label="{ DetalleVenta | DetalleVentaID : int | VentaID : int | ProductoID : int | Cantidad : int | PrecioUnitario : decimal | Total : decimal | }"];
+
+    // Métodos de Producto
+    ProductosService [label="{ ProductosService | GetProductosAsync() | GetProductoPorIdAsync() | GetProductosPorCategoriaAsync() | CrearProductoAsync() | }"];
+    
+    // Métodos de Categoria
+    
+
+    // Métodos de Venta
+    VentasService [label="{ VentasService | ObtenerVentasAsync() | ObtenerVentasPorCategoriaAsync() | ObtenerVentasPorProductoAsync() | }"];
+
+    // Métodos de Devolucion
+    DevolucionesService [label="{ DevolucionesService | ObtenerDevolucionesPorVentaAsync() | CrearDevolucionAsync() | ActualizarDevolucionAsync() | }"];
+
+    // Métodos de DetalleVenta
+    
+
+    // Relaciones entre clases
+    Producto -> Categoria [label="CategoriaID"];
+    Devolucion -> Venta [label="VentaID"];
+    DetalleVenta -> Venta [label="VentaID"];
+    DetalleVenta -> Producto [label="ProductoID"];
+
+    // Servicios a clases
+    ProductosService -> Producto [label="Gestiona"];
+    
+    VentasService -> Venta [label="Gestiona"];
+    DevolucionesService -> Devolucion [label="Gestiona"];
+}
