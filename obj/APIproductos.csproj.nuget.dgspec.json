@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\etejada\\source\\repos\\APIProducts\\APIproductos.csproj": {}
+    "c:\\Users\\david\\source\\repos\\APIProductos\\APIproductos.csproj": {}
   },
   "projects": {
-    "c:\\Users\\etejada\\source\\repos\\APIProducts\\APIproductos.csproj": {
+    "c:\\Users\\david\\source\\repos\\APIProductos\\APIproductos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\etejada\\source\\repos\\APIProducts\\APIproductos.csproj",
+        "projectUniqueName": "c:\\Users\\david\\source\\repos\\APIProductos\\APIproductos.csproj",
         "projectName": "APIproductos",
-        "projectPath": "c:\\Users\\etejada\\source\\repos\\APIProducts\\APIproductos.csproj",
-        "packagesPath": "C:\\Users\\etejada\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\etejada\\source\\repos\\APIProducts\\obj\\",
+        "projectPath": "c:\\Users\\david\\source\\repos\\APIProductos\\APIproductos.csproj",
+        "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\david\\source\\repos\\APIProductos\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\etejada\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -97,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

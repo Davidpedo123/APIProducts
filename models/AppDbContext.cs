@@ -14,6 +14,10 @@ namespace APIproductos.Models
         public DbSet<DetalleVenta> DetalleVentas { get; set; }
         public DbSet<Devolucion> Devoluciones { get; set; }
 
+        public DbSet<VentasPorCategoria> VentasPorCategoria { get; set; }
+        public DbSet<VentasPorProducto> VentasPorProducto { get; set; }
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Definir claves primarias
@@ -36,15 +40,16 @@ namespace APIproductos.Models
                 .WithMany()
                 .HasForeignKey(dv => dv.ProductoID);
 
-            modelBuilder.Entity<Devolucion>()
-                .HasOne(d => d.Venta)
-                .WithMany(v => v.Devoluciones)
-                .HasForeignKey(d => d.VentaID);
+            
 
-            modelBuilder.Entity<Devolucion>()
-                .HasOne(d => d.Producto)
-                .WithMany()
-                .HasForeignKey(d => d.ProductoID);
+            modelBuilder.Entity<VentasPorProducto>()
+            .ToView("VentasPorProducto") // Mapea la vista "VentasPorProducto"
+            .HasNoKey(); // Sin clave primaria
+
+            modelBuilder.Entity<VentasPorCategoria>()
+                .ToView("VentasPorCategoria") // Mapea la vista "VentasPorCategoria"
+                .HasNoKey(); // Sin clave primaria
+
         }
     }
 }

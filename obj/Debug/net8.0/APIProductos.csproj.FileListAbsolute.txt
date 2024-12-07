@@ -16,14 +16,6 @@ C:\Users\david\source\repos\APIProductos\obj\Debug\net8.0\APIProductos.AssemblyI
 C:\Users\david\source\repos\APIProductos\obj\Debug\net8.0\APIProductos.csproj.CoreCompileInputs.cache
 C:\Users\david\source\repos\APIProductos\obj\Debug\net8.0\APIProductos.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\david\source\repos\APIProductos\obj\Debug\net8.0\APIProductos.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\david\source\repos\APIProductos\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\david\source\repos\APIProductos\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\david\source\repos\APIProductos\obj\Debug\net8.0\staticwebassets\msbuild.APIProductos.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\david\source\repos\APIProductos\obj\Debug\net8.0\staticwebassets\msbuild.build.APIProductos.props
-C:\Users\david\source\repos\APIProductos\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.APIProductos.props
-C:\Users\david\source\repos\APIProductos\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.APIProductos.props
-C:\Users\david\source\repos\APIProductos\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\david\source\repos\APIProductos\obj\Debug\net8.0\scopedcss\bundle\APIProductos.styles.css
 C:\Users\david\source\repos\APIProductos\obj\Debug\net8.0\APIProductos.dll
 C:\Users\david\source\repos\APIProductos\obj\Debug\net8.0\refint\APIProductos.dll
 C:\Users\david\source\repos\APIProductos\obj\Debug\net8.0\APIProductos.pdb
@@ -336,3 +328,11 @@ c:\Users\etejada\source\repos\APIProducts\obj\Debug\net8.0\refint\APIproductos.d
 c:\Users\etejada\source\repos\APIProducts\obj\Debug\net8.0\APIproductos.pdb
 c:\Users\etejada\source\repos\APIProducts\obj\Debug\net8.0\APIproductos.genruntimeconfig.cache
 c:\Users\etejada\source\repos\APIProducts\obj\Debug\net8.0\ref\APIproductos.dll
+c:\Users\david\source\repos\APIProductos\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+c:\Users\david\source\repos\APIProductos\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+c:\Users\david\source\repos\APIProductos\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
+c:\Users\david\source\repos\APIProductos\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
+c:\Users\david\source\repos\APIProductos\bin\Debug\net8.0\Newtonsoft.Json.dll
+c:\Users\david\source\repos\APIProductos\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+c:\Users\david\source\repos\APIProductos\obj\Debug\net8.0\APIproductos.RazorAssemblyInfo.cache
+c:\Users\david\source\repos\APIProductos\obj\Debug\net8.0\APIproductos.RazorAssemblyInfo.cs
