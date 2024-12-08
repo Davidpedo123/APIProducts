@@ -1,6 +1,8 @@
 using APIproductos.Models;
 using APIproductos.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace APIproductos.Controllers
 {
@@ -23,7 +25,7 @@ namespace APIproductos.Controllers
             var productos = await _productService.GetProductosAsync();
             return Ok(productos);
         }
-
+        
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProductoPorID(int id)
         {
@@ -32,7 +34,7 @@ namespace APIproductos.Controllers
                 return NotFound($"No se encontró un producto con ID {id}.");
             return Ok(producto);
         }
-         // Obtener productos por categoría
+         
         [HttpGet("categoria/{categoriaId}")]
         public async Task<IActionResult> GetProductosPorCategoria(int categoriaId)
         {
@@ -44,6 +46,21 @@ namespace APIproductos.Controllers
             }
 
             return Ok(productos);
+        }
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateProducto(int id, [FromBody] Producto producto)
+        {
+            try
+            {
+                
+                var productoActualizado = await _productService.UpdateProductoAsync(id, producto);
+                return Ok(productoActualizado);  
+            }
+            catch (Exception ex)
+            {
+                
+                return NotFound(ex.Message);  
+            }
         }
         
 
@@ -64,5 +81,6 @@ namespace APIproductos.Controllers
             await _productService.DeleteProductoAsync(producto);
             return NoContent();
         }
+        
     }
 }

@@ -53,5 +53,45 @@ namespace APIproductos.Services
                 .Where(p => p.CategoriaID == categoriaId)
                 .ToListAsync();
         }
+        public async Task<Producto> UpdateProductoAsync(int id, Producto producto)
+        {
+            
+            var productoExistente = await _context.Productos.FindAsync(id);
+            if (productoExistente == null)
+            {
+                throw new Exception($"El producto con ID {id} no existe.");
+            }
+
+            
+            productoExistente.Nombre = producto.Nombre;
+            productoExistente.Descripcion = producto.Descripcion;
+            productoExistente.Precio = producto.Precio;
+            productoExistente.Stock = producto.Stock;
+            productoExistente.CategoriaID = producto.CategoriaID;
+
+            try
+            {
+                
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ProductoExists(id))
+                {
+                    throw new Exception($"El producto con ID {id} no existe.");
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return productoExistente;
+        }
+
+            private bool ProductoExists(int id)
+            {
+                return _context.Productos.Any(e => e.ProductoID == id);
+            }
     }
 }

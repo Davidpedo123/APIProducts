@@ -20,15 +20,14 @@ namespace APIproductos.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Definir claves primarias
+            
             modelBuilder.Entity<Categoria>().HasKey(c => c.CategoriaID);
             modelBuilder.Entity<Producto>().HasKey(p => p.ProductoID);
             modelBuilder.Entity<Venta>().HasKey(v => v.VentaID);
             modelBuilder.Entity<DetalleVenta>().HasKey(dv => dv.DetalleID);
             modelBuilder.Entity<Devolucion>().HasKey(d => d.DevolucionID);
 
-            // Relaciones
-            
+           
 
             modelBuilder.Entity<DetalleVenta>()
                 .HasOne(dv => dv.Venta)
@@ -43,12 +42,12 @@ namespace APIproductos.Models
             
 
             modelBuilder.Entity<VentasPorProducto>()
-            .ToView("VentasPorProducto") // Mapea la vista "VentasPorProducto"
-            .HasNoKey(); // Sin clave primaria
+            .ToView("VentasPorProducto") 
+            .HasNoKey(); 
 
             modelBuilder.Entity<VentasPorCategoria>()
-                .ToView("VentasPorCategoria") // Mapea la vista "VentasPorCategoria"
-                .HasNoKey(); // Sin clave primaria
+                .ToView("VentasPorCategoria") 
+                .HasNoKey(); 
 
         }
     }
